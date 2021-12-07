@@ -64,6 +64,10 @@ header{
     margin: 0 auto;
     width: 940px;
 }
+.container-footer{
+    margin-top: 0px;    
+    width: 940px;
+}
 /*-------------BUSCA ---------*/
 .busca,
 .menu-departamentos
@@ -138,8 +142,8 @@ header{
         background-color:#dcdcf5;
 }
 .tamanho-img{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
 
 }
 
@@ -147,10 +151,11 @@ header{
 /*------------- RODAPÉ ---------*/
 footer{
     clear:both;
-    background-image:url(../img/rodape.jpg);
-    height:100px;
+    background-image:url(../img/rodape.jpg);    
+    height:65px;
     width: 900px;
-    padding: 20px 0;
+    padding: 10px 0;
+    top: 200px;
     position: relative;    
 }
 .facebook{
@@ -158,6 +163,15 @@ footer{
     width: 85px;
     background-image:url(../img/facebook.png);
     text-indent:-9999px;
+}
+.social{
+    position:absolute;
+    top:30px;
+    right:0;
+}
+.social li{
+    float:left;
+    margin-left:25px;
 }
 .social a{
     /* tamanho da imagem */
@@ -177,20 +191,6 @@ footer{
 .social a[href*="google.com"]{
         background-image:url(../img/googleplus.png);
 }
-   
-
-        
-
-
-
-
-
-
-
-
-
-
-
 p {
     font-family: monospace;
     text-align: justify;
@@ -203,17 +203,6 @@ h1{
     
     
 }
-/*h2{
-    border-bottom:2pxsolid#333333;
-    font-family: sans-serif;
-    line-height: 3px; /* tamanho da altura de cada linha 
-    letter-spacing:3px; /* tamanho do espaço entre cada letra 
-    word-spacing: 3px; /* tamanho do espaço entre cada palavra 
-    text-indent: 30px; /* tamanho da margem da primeira linha do texto 
-   
-    
-}
-*/
 figure{      
     
     text-align: center;
@@ -225,8 +214,10 @@ figcaption{
 
 #logo{        
      
-    width: 100px;
-    height: 100px ;    
+    margin-top: 10px;
+    width: 200px;
+
+    height: 30px ;    
 
 }
 .img-centro{    
