@@ -4,12 +4,13 @@ body{
 
 }
 header{
-    position:relative;
+    position: relative;
 }
+/*-------------OPÇÕES ---------*/
 .menu-opcoes{
-    position:absolute;
-    bottom:0;
-    right:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .menu-opcoes ul li{
     display: inline;    
@@ -20,10 +21,32 @@ header{
     
     color:#003366;
 }
-.menu-cabecalho{
+/*-------------DEPARTAMENTOS ---------*/
 
-
+.menu-departamentos{    
+    float: left;
+    clear:left;
+    text-transform:uppercase;
 }
+.menu-departamentos li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a{
+    color:#333333;
+    text-decoration: none;
+}
+.menu-departamentos{
+    padding-bottom:10px;
+    padding-bottom:10px;
+    clear:left;
+}
+.item-menu{
+    text-decoration:none;
+}
+
 .sacola{
     background: url(../img/carrinho-compras40x40.png) no-repeat top right;
     font-size: 12px;
@@ -41,6 +64,133 @@ header{
     margin: 0 auto;
     width: 940px;
 }
+/*-------------BUSCA ---------*/
+.busca,
+.menu-departamentos
+{
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;    
+    margin-right: 10px;
+    width: 230px;    
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2{    
+    margin: 10px;
+}
+.busca input{
+    border-radius: 10px;
+    vertical-align: middle;    
+}
+.busca input[type=search]{
+    width: 170px;
+}
+.busca,
+.menu-departamentos{
+    float: left;
+}
+
+
+.destaque{
+    margin-top: 10px;
+ }
+
+ /*-------------PAINEIS ---------*/
+ .painel{
+    margin:10px0;
+    padding:10px;
+    width:445px;
+}
+.painel li{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+.paineis{
+    margin: 10px;
+    padding: 10px;
+    width: 445px;
+}
+.painel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.painel a{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades{
+        float:left;
+        background-color:#f5dcdc;
+}
+.mais-vendidos{
+        float:right;
+        background-color:#dcdcf5;
+}
+.tamanho-img{
+    width: 90px;
+    height: 90px;
+
+}
+
+
+/*------------- RODAPÉ ---------*/
+footer{
+    clear:both;
+    background-image:url(../img/rodape.jpg);
+    height:100px;
+    width: 900px;
+    padding: 20px 0;
+    position: relative;    
+}
+.facebook{
+    height: 50px;
+    width: 85px;
+    background-image:url(../img/facebook.png);
+    text-indent:-9999px;
+}
+.social a{
+    /* tamanho da imagem */
+    height:32px;
+    width:32px;
+    /* image replacement */
+    display:block;
+    text-indent:-9999px;
+}
+.social a[href*="facebook.com"]{
+    background-image:url(../img/facebook.png);
+}
+.social a[href*="twitter.com"]{
+    background-image:url(../img/twitter.png);
+}
+
+.social a[href*="google.com"]{
+        background-image:url(../img/googleplus.png);
+}
+   
+
+        
+
+
+
+
+
+
+
+
+
+
+
 p {
     font-family: monospace;
     text-align: justify;
@@ -53,20 +203,20 @@ h1{
     
     
 }
-h2{
+/*h2{
     border-bottom:2pxsolid#333333;
     font-family: sans-serif;
-    line-height: 3px; /* tamanho da altura de cada linha */
-    letter-spacing:3px; /* tamanho do espaço entre cada letra */
-    word-spacing: 3px; /* tamanho do espaço entre cada palavra */
-    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
-    
+    line-height: 3px; /* tamanho da altura de cada linha 
+    letter-spacing:3px; /* tamanho do espaço entre cada letra 
+    word-spacing: 3px; /* tamanho do espaço entre cada palavra 
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto 
+   
     
 }
+*/
 figure{      
     
     text-align: center;
-
 }
     
 figcaption{
@@ -77,20 +227,9 @@ figcaption{
      
     width: 100px;
     height: 100px ;    
-}
-#dev{ 
-    float:left;    
-    width: 200px;
-    height: 150px ;
-}
-hr{ 
-    margin-left: 20px;
-    border-color:rgb(238, 235, 235);
-}
-#wireflames{ 
-    width:500px ;
-    height:500px;
-    text-align: center;
-    
-}
 
+}
+.img-centro{    
+    width:700px;
+    height: 275px ; 
+}

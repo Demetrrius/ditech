@@ -19,7 +19,7 @@
             <nav class="menu-opcoes menu-cabecalho">
                 <ul>
                     <li><a href="#">Sua conta</a></li>
-                    <li><a href="#">Lista de desejos</a></li>
+                    <li><a href="#">Cursos desejados</a></li>
                     <li><a href="#">Cart&atilde;o Fidelidade</a></li>
                     <li><a href="#">Ajuda</a></li>                    
                 </ul>                
@@ -27,24 +27,164 @@
         </header>
         <!-- Fim do cabeçalho-->
 
-        <!-- Conteúdo da Página Principal-->
-        <section id="main">
+        <!-- Inico Contair destaque-->
+        <div class="container destaque">
+            <br>
+            <section class="busca">
+                <h2>Busca</h2>
+                <form>                
+                    <input type="search">
+                    <input type="image" src="img/busca.png" class="lupa">
+                </form>            
+            </section> 
+            <!-- Fim da Busca-->
             
-        </section> 
+            <!-- Inicio MENU.DEPARTAMENTOS-->
+            <section class="menu-departamentos">
+                <h2>Departamentos</h2>                
+                <nav>
+                    <ul>
+                        <li><a href="#">PROGRAMA&Ccedil;&Atilde;O</a></li>
+                        <li><a href="#">FRONT-END </a></li>
+                        <li><a href="#">DATA SCIENCE</a></li>
+                        <li><a href="#">DEVOPS</a></li>
+                        <li><a href="#">UX & DESING</a></li>
+                        <li><a href="#">MOBILIE</a></li>
+                    </ul>
+                </nav>                
+            </section>
+            <!-- Fim  MENU.DEPARTAMENTOS -->
 
-        <!-- Peinel de destaque-->
-        <section>
+            <img class="img-centro" src="img/Curso-de-programacao.jpg" alt="Cursos em destaque.">
+        </div>
+        <!-- Fim Contair destaque-->
+        
+        <div class="container">
+            <section class="painel novidades">               
+                <h2>Novos cursos</h2>
+                <ol> 
+                    <!-- cursos vendidos -->
+                    <li>
+                        <a href="curso1.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/logica-programacao.png">
+                                <figcaption>LÓGICA</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="curso2.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/front-end-development.jpg">
+                                <figcaption>FRONT-END</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="curso3.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/back-end.jpg">
+                                <figcaption>BACK-AND</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="curso4.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/devops.png">
+                                <figcaption>DEVOPS</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="curso5.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/data-science.jpg">
+                                <figcaption>DATA SCIENCE</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="curso6.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/Ux-Design-380x249.png">
+                                <figcaption>UX & DESIGN</figcaption>
+                            </figure>
+                        </a>
+                    </li>  
+                </ol>
+            </section>
+       
+            <!-- Produtos mais vendidos -->
 
-                
-        </section>
+            <section class="painel mais-vendidos">
+                <h2>Mais vendidos</h2>
+                <ol>
+                    <li>
+                        <a href="curso-HTML-CSS.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/cursohtml.jpg" >
+                                <figcaption>HMTL5 e CSS</figcaption>
+                            </figure>
+                        </a>
+                    </li>                
+                    <li>
+                        <a href="curso-javascript.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/javascript-300x300.jpg" >
+                                <figcaption>JavaScript</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursoangular.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/angular.png" >
+                                <figcaption>Angular</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursoJava.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/java-300x300.jpg" >
+                                <figcaption>Java</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursopyton.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/Python3–Mundo3-300x300.png" >
+                                <figcaption>Python</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursocd.html">
+                            <figure>
+                                <img class="tamanho-img" src="img/cursos/data-science.jpg">
+                                <figcaption>Ciencia de Dados</figcaption>
+                            </figure>
+                        </a>
+                    </li>
 
+                </ol>
+            </section>
+            
+        </div>
 
         <!-- Incio do rodapé-->
-        <footer>
-
+        <footer class="container">
+            <div class="container">                
+                <img src="img/DitechInc-Logofinalbranco.png" alt="Logo DeiTec">
+                <ul class="social">
+                    <li><a href="http://facebook.com/mirrorfashion" target="_blank">Facebook</a></li>
+                    <li><a href="http://twitter.com/mirrorfashion" target="_blank">Twitter</a></li>
+                    <li><a href="http://google.com/" target="_blank">Google+</a></li>
+                </ul>
+            </div>
         </footer>
         <!-- Fim do rodapé-->
-
-
     </body>
 </html>
