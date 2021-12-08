@@ -4,24 +4,24 @@
         <meta charset="utf=8">
         <title>DiTech Tecnoligia</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilos.css">
-        
+        <link rel="stylesheet" href="css/estilos.css"> 
+           
     </head>
     <body> 
         <!-- Incio do cabeçalho-->
         <header class="container"> 
             
             <h1></h1><img id="logo" src="img/nova-logoditechmenor.png"  alt="Ditech Tecnoligia"></h1> 
-            <p>DitechInc</p>
+            <p>Ditech&copy;</p>
             <p class="sacola">
                 Nenhum item no carrinho de compras.
             </p>
             <nav class="menu-opcoes menu-cabecalho">
-                <ul>
+                <ul class="menu">                  
                     <li><a href="#">Sua conta</a></li>
                     <li><a href="#">Cursos desejados</a></li>
                     <li><a href="#">Cart&atilde;o Fidelidade</a></li>
-                    <li><a href="#">Ajuda</a></li>                    
+                    <li><a href="#">Ajuda</a></li>                     
                 </ul>                
             </nav> 
         </header>
@@ -32,9 +32,9 @@
             <br>
             <section class="busca">
                 <h2>Busca</h2>
-                <form>                
-                    <input type="search">
-                    <input type="image" src="img/busca.png" class="lupa">
+                <form action="http://google.com.br/search" id="form-busca"  target="_blank">                
+                    <input type="search" name="q" id="q" onfocus="limpafocus(this.id)">
+                    <input type="image" src="img/busca.png" >
                 </form>            
             </section> 
             <!-- Fim da Busca-->
@@ -49,15 +49,27 @@
                         <li><a href="#">DATA SCIENCE</a></li>
                         <li><a href="#">DEVOPS</a></li>
                         <li><a href="#">UX & DESING</a></li>
-                        <li><a href="#">MOBILIE</a></li>
+                        <li><a href="#">MOBILIE</a></li>                      
+                        
                     </ul>
                 </nav>                
             </section>
-            <!-- Fim  MENU.DEPARTAMENTOS -->
-
-            <img class="img-centro" src="img/Curso-de-programacao.jpg" alt="Cursos em destaque.">
+            <!-- Fim  MENU.DEPARTAMENTOS -->            
+            <img id="destaque" class="img-centro" src="img/destaque-home.png" alt="Cursos em destaque.">
+            <!--<a href="#" class="pause">Pause</a>-->
         </div>
         <!-- Fim Contair destaque-->
+        <div class="container sobre">
+           <h1>A Ditech tem os melhores cursos!</h1>                
+            <h3>
+            <p>
+                A Mirror Fashion é a maior empresa de comércio eletrônico no segmento
+                de moda em todo o mundo. Fundada em 1932, possui filiais
+                em 124 países........
+            </p>
+            </h3>            
+
+        </div>
         
         <div class="container">
             <section class="painel novidades">               
@@ -173,6 +185,8 @@
             </section>
             
         </div>
+        
+
 
         <!-- Incio do rodapé-->
         <footer class="container">
@@ -188,5 +202,7 @@
             </div>
         </footer>
         <!-- Fim do rodapé-->
+        <script src="js/home.js"></script>
+        <!-- <script src="js/clearInterval.js"></script>-->
     </body>
 </html>
